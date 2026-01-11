@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Memory, CreateMemoryInput, Collection } from '../types/memory';
+import type { Memory, CreateMemoryInput, Collection } from '../types/memory';
 import { generateMemoryMetadata } from '../utils/aiMock';
 
 interface MemoryState {

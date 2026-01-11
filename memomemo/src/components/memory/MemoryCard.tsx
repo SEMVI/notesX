@@ -1,5 +1,5 @@
 import { Star, MoreVertical } from 'lucide-react';
-import { Memory } from '../../types/memory';
+import type { Memory } from '../../types/memory';
 import { useMemoryStore } from '../../store/memoryStore';
 import { formatDate, getMemoryIcon } from '../../utils/formatters';
 
