@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoMemo - Visual Mockups</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="memomemo-styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">🌓 Toggle Theme</button>
+
+    <div class="mockup-container">
+        <div class="mockup-header">
+            <h1>💭 MemoMemo - Visual Mockups</h1>
+            <p>Interactive UI Design Preview</p>
+        </div>
+
+        <div class="mockup-nav">
+            <button class="active" data-screen="dashboard">📊 Dashboard</button>
+            <button data-screen="capture">✨ Quick Capture</button>
+            <button data-screen="search">🔍 Search</button>
+            <button data-screen="detail">📄 Memory Detail</button>
+        </div>
+
+        <!-- Dashboard Screen -->
+        <div class="screen active" id="dashboard">
+            <div class="dashboard">
+                <div class="dashboard-header">
+                    <div class="logo">
+                        <div class="logo-icon">💭</div>
+                        <span>MemoMemo</span>
+                    </div>
+                    <div class="user-menu">
+                        <button class="icon-btn">🔔</button>
+                        <button class="icon-btn">⚙️</button>
+                        <div class="user-avatar">JD</div>
+                    </div>
+                </div>
+
+                <div class="quick-capture">
+                    <div class="capture-input-wrapper">
+                        <span class="capture-icon">💭</span>
+                        <input type="text" class="capture-input" placeholder="Type anything, paste URL, or drop files... (⌘⇧M)" />
+                        <button class="icon-btn">🎤</button>
+                        <button class="icon-btn">📎</button>
+                        <button class="btn-primary">Save</button>
+                    </div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat-card">
+                        <div class="stat-icon blue">💾</div>
+                        <div class="stat-content">
+                            <h3>1,247</h3>
+                            <p>Total Memories</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon green">📅</div>
+                        <div class="stat-content">
+                            <h3>23</h3>
+                            <p>This Week</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon purple">📚</div>
+                        <div class="stat-content">
+                            <h3>42</h3>
+                            <p>Collections</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="memory-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Recent Memories</h2>
+                        <div class="view-toggle">
+                            <button class="icon-btn">▦</button>
+                            <button class="icon-btn">☰</button>
+                        </div>
+                    </div>
+
+                    <div class="memory-grid">
+                        <div class="memory-card">
+                            <span class="memory-type-badge">🔗</span>
+                            <h3>React Performance Optimization</h3>
+                            <p>Learn advanced techniques for optimizing React applications...</p>
+                            <div class="memory-tags">
+                                <span class="tag primary">React</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="memory-meta">
+                                <span>📅 2 hours ago</span>
+                                <button class="icon-btn">⭐</button>
+                            </div>
+                        </div>
+                        <div class="memory-card">
+                            <span class="memory-type-badge">📝</span>
+                            <h3>Meeting Notes: Product Strategy</h3>
+                            <p>Discussed roadmap priorities and user feedback...</p>
+                            <div class="memory-tags">
+                                <span class="tag primary">Meeting</span>
+                                <span class="tag">Product</span>
+                            </div>
+                            <div class="memory-meta">
+                                <span>📅 Yesterday</span>
+                                <button class="icon-btn">⭐</button>
+                            </div>
+                        </div>
+                        <div class="memory-card">
+                            <span class="memory-type-badge">🖼️</span>
+                            <h3>UI Design Inspiration</h3>
+                            <p>Beautiful dashboard design with clean layout...</p>
+                            <div class="memory-tags">
+                                <span class="tag primary">Design</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                            <div class="memory-meta">
+                                <span>📅 3 days ago</span>
+                                <button class="icon-btn">⭐</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Capture Screen -->
+        <div class="screen" id="capture">
+            <div class="capture-screen">
+                <div class="capture-modal">
+                    <h2>✨ Quick Capture</h2>
+                    <p>Add anything to your memory collection</p>
+
+                    <div class="capture-tabs">
+                        <button class="capture-tab active">📝 Text</button>
+                        <button class="capture-tab">🔗 URL</button>
+                        <button class="capture-tab">🖼️ Image</button>
+                        <button class="capture-tab">🎤 Voice</button>
+                    </div>
+
+                    <textarea class="capture-textarea" placeholder="Paste or type your content here...">Check out this article about React Server Components...</textarea>
+
+                    <div class="ai-processing">
+                        <div class="ai-status">
+                            <div class="spinner"></div>
+                            <span>AI is analyzing your content...</span>
+                        </div>
+                        <div class="ai-suggestions">
+                            <span class="tag primary">Article</span>
+                            <span class="tag primary">React</span>
+                            <span class="tag primary">Tutorial</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 12px; margin-top: 24px;">
+                        <button class="btn-secondary">Cancel</button>
+                        <button class="btn-primary" style="flex: 1;">Save Memory</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Screen -->
+        <div class="screen" id="search">
+            <div class="search-screen">
+                <div class="search-header">
+                    <div class="search-bar">
+                        <span style="font-size: 1.25rem;">🔍</span>
+                        <input type="text" class="search-input" placeholder="Search your memories..." value="React tutorials" />
+                    </div>
+                    <div class="search-filters">
+                        <div class="filter-chip active">All Types</div>
+                        <div class="filter-chip">🔗 URLs</div>
+                        <div class="filter-chip">📝 Notes</div>
+                        <div class="filter-chip">🖼️ Images</div>
+                        <div class="filter-chip">Last 30 days</div>
+                    </div>
+                </div>
+
+                <div class="search-results">
+                    <div class="results-header">
+                        <p>Found 12 memories matching "React tutorials"</p>
+                    </div>
+
+                    <div class="memory-grid">
+                        <div class="memory-card">
+                            <span class="memory-type-badge">🔗</span>
+                            <h3>React Performance Optimization</h3>
+                            <p>Learn advanced techniques for optimizing <mark>React</mark> applications...</p>
+                            <div class="memory-tags">
+                                <span class="tag primary">React</span>
+                                <span class="tag">Tutorial</span>
+                            </div>
+                            <div class="memory-meta">
+                                <span>📅 2 hours ago</span>
+                                <span>⭐ 95% match</span>
+                            </div>
+                        </div>
+                        <div class="memory-card">
+                            <span class="memory-type-badge">📝</span>
+                            <h3>React Hooks Deep Dive</h3>
+                            <p>Complete guide to using <mark>React</mark> Hooks effectively...</p>
+                            <div class="memory-tags">
+                                <span class="tag primary">React</span>
+                                <span class="tag">Hooks</span>
+                            </div>
+                            <div class="memory-meta">
+                                <span>📅 1 week ago</span>
+                                <span>⭐ 92% match</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail Screen -->
+        <div class="screen" id="detail">
+            <div class="detail-screen">
+                <div class="detail-container">
+                    <div class="detail-header">
+                        <div class="detail-actions">
+                            <button class="icon-btn">←</button>
+                            <button class="icon-btn">⭐</button>
+                            <button class="icon-btn">🔗</button>
+                            <button class="icon-btn">✏️</button>
+                            <button class="icon-btn">🗑️</button>
+                        </div>
+
+                        <h1 class="detail-title">React Performance Optimization Techniques</h1>
+
+                        <div class="memory-tags" style="margin-bottom: 16px;">
+                            <span class="tag primary">React</span>
+                            <span class="tag primary">JavaScript</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Tutorial</span>
+                        </div>
+
+                        <div class="detail-meta">
+                            <span>🔗 Article</span>
+                            <span>📅 Added 2 hours ago</span>
+                            <span>👁️ Viewed 3 times</span>
+                            <span>📚 Web Development</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-content">
+                        <h3>Summary</h3>
+                        <p>This comprehensive guide covers advanced techniques for optimizing React applications, including memoization strategies, lazy loading components, code splitting best practices, and performance profiling tools.</p>
+
+                        <h3 style="margin-top: 24px;">Key Takeaways</h3>
+                        <ul>
+                            <li>Use React.memo() for expensive component renders</li>
+                            <li>Implement code splitting with React.lazy() and Suspense</li>
+                            <li>Optimize re-renders with useMemo and useCallback</li>
+                            <li>Profile performance with React DevTools Profiler</li>
+                        </ul>
+
+                        <h3 style="margin-top: 24px;">Original Source</h3>
+                        <a href="#" style="color: var(--memo-primary);">https://example.com/react-performance-guide</a>
+                    </div>
+
+                    <div class="related-memories">
+                        <h3 style="margin-bottom: 16px;">Related Memories</h3>
+                        <div class="memory-grid">
+                            <div class="memory-card">
+                                <span class="memory-type-badge">📝</span>
+                                <h3>React Hooks Best Practices</h3>
+                                <div class="memory-tags">
+                                    <span class="tag primary">React</span>
+                                </div>
+                            </div>
+                            <div class="memory-card">
+                                <span class="memory-type-badge">🔗</span>
+                                <h3>Web Performance Metrics</h3>
+                                <div class="memory-tags">
+                                    <span class="tag primary">Performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="memomemo-script.js"></script>
+</body>
+</html>
