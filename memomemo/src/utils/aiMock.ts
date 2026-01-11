@@ -1,4 +1,4 @@
-import { CreateMemoryInput } from '../types/memory';
+import type { CreateMemoryInput } from '../types/memory';
 
 // Mock AI processing - simulates what OpenAI API would do
 export async function generateMemoryMetadata(input: CreateMemoryInput) {

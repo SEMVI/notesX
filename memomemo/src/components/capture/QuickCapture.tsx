@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Mic, Paperclip, Sparkles } from 'lucide-react';
 import { useMemoryStore } from '../../store/memoryStore';
-import { MemoryType } from '../../types/memory';
+import type { MemoryType } from '../../types/memory';
 
 export function QuickCapture() {
   const [input, setInput] = useState('');
